@@ -14,11 +14,17 @@ function App() {
  const removevalue=()=>{
   setCounter(0)
  }
+ const decreaseValue=()=>{
+  if(counter>0)
+  setCounter(counter-1)
+ }
   return (
     <>
       <h1>Counter with react</h1>
       <h2>Counter value: {counter} </h2>
       <button onClick={addValue}>add value</button>
+      <br /><br />
+      <button onClick={decreaseValue}>decrease value</button>
       <br /><br />
       <button onClick={removevalue}>remove value</button>
     </>
